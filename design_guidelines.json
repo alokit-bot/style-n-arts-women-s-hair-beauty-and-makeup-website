@@ -1,0 +1,132 @@
+{
+  "project_name": "Style n Arts Women's hair, Beauty and Makeup",
+  "theme": "light",
+  "archetype": "1_organic_earthy",
+  "brand_direction": {
+    "vibe": "modern feminine salon, clean, confident, warm, skilled",
+    "tone": "Premium but approachable, hygienic, appointment-friendly, locally trusted"
+  },
+  "colors": {
+    "background": {
+      "base": "#FAF9F6",
+      "surface": "#FDF8F7",
+      "dark_surface": "#F5E6E8"
+    },
+    "primary": {
+      "main": "#9E3C55",
+      "hover": "#8A3349",
+      "light": "#D89BA9"
+    },
+    "accent": {
+      "gold": "#C5A059",
+      "gold_light": "#E8D3A2"
+    },
+    "text": {
+      "primary": "#222222",
+      "secondary": "#4A4A4A",
+      "light": "#FAF9F6"
+    },
+    "border": {
+      "light": "#EEDDDE",
+      "medium": "#DAB6BC"
+    }
+  },
+  "typography": {
+    "font_families": {
+      "heading": "'Playfair Display', serif",
+      "body": "'Manrope', sans-serif"
+    },
+    "scales": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none font-medium",
+      "h2": "text-3xl sm:text-4xl tracking-tight leading-tight font-medium",
+      "h3": "text-2xl sm:text-3xl leading-snug font-medium",
+      "h4": "text-xl sm:text-2xl leading-snug",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm uppercase tracking-[0.2em]"
+    }
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_padding": "py-20 md:py-32",
+    "border_radius": "rounded-2xl md:rounded-3xl",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8"
+  },
+  "sections": [
+    {
+      "name": "Sticky Header",
+      "instructions": "Glassmorphism header (backdrop-blur-xl bg-[#FAF9F6]/80). Logo text on left in Playfair Display. Nav links (Services, Bridal, Gallery, Contact). Primary CTA button 'Call to Book' (tel: +91 77607 11425) in deep rose. Must be z-50 and sticky."
+    },
+    {
+      "name": "Hero Section",
+      "instructions": "Split layout or rich overlay. Left: Large Playfair heading. Subheadline about HSR Layout's top-rated salon. Two CTAs: 'Call to Book' (solid deep rose) and 'Get Directions' (outline). Right: High-quality image of hair styling. Include a floating badge '4.9 ⭐ (1,700+ Reviews)'."
+    },
+    {
+      "name": "Trust Strip",
+      "instructions": "Full-width banner across the screen just below the hero. Background: Soft Blush (#FDF8F7). Content: 4 flex items horizontally (4.9 Stars & 1700 Reviews, 7+ Years Experience, HSR Layout, Open till 9:30 PM). Use small gold accents/icons for each."
+    },
+    {
+      "name": "Services Menu",
+      "instructions": "Clean, elegant layout with generous spacing. Group by categories: Hair, Makeup, Skincare, Nails. Use a list structure with a subtle dotted line connecting service name to INR price. Charcoal text for high readability."
+    },
+    {
+      "name": "Bridal & Party Makeup Highlight",
+      "instructions": "High contrast section. Background: Deep Rose (#9E3C55). Text: Warm Ivory (#FAF9F6). Asymmetrical layout showcasing stunning Indian bridal makeup image on one side, and service details on the other. Elegant, premium feel."
+    },
+    {
+      "name": "Salon Experience",
+      "instructions": "Bento grid (4 blocks). Highlight hygiene, expert consultation, women-only safe space, and wheelchair accessibility. Use lucide-react icons (in Gold #C5A059). Soft blush surface cards with subtle border (#EEDDDE). Optical alignment."
+    },
+    {
+      "name": "Gallery Grid",
+      "instructions": "Asymmetrical masonry or tetris grid (Mode A) showing the salon's work (hair, nails, interior, makeup). Mix tall (row-span-2) and wide images. Use rounded corners and subtle hover scaling."
+    },
+    {
+      "name": "Location & Contact",
+      "instructions": "Two columns. Left: Address text, phone, working hours (till 9:30 pm), and a 'Get Directions' CTA button. Right: A styled Google Maps embed or a highly stylized static map image. Background: Warm Ivory."
+    },
+    {
+      "name": "Footer",
+      "instructions": "Deep Charcoal (#222222) background, Warm Ivory text. Large typography for brand name. Links to sections. Address and copyright."
+    }
+  ],
+  "components": {
+    "buttons": {
+      "primary": "bg-[#9E3C55] text-white hover:bg-[#8A3349] transition-colors rounded-full px-8 py-3 font-medium flex items-center gap-2",
+      "secondary": "border border-[#9E3C55] text-[#9E3C55] hover:bg-[#FDF8F7] transition-colors rounded-full px-8 py-3 font-medium flex items-center gap-2"
+    },
+    "cards": {
+      "base": "bg-[#FDF8F7] rounded-3xl p-8 border border-[#EEDDDE]"
+    }
+  },
+  "media": {
+    "images": {
+      "hero": {
+        "url": "https://images.pexels.com/photos/3993290/pexels-photo-3993290.jpeg",
+        "alt": "Hairdresser styling woman's hair in modern salon"
+      },
+      "bridal_highlight": {
+        "url": "https://images.pexels.com/photos/29368877/pexels-photo-29368877.jpeg",
+        "alt": "Beautiful Indian bride with stunning jewelry"
+      },
+      "gallery_1": {
+        "url": "https://images.pexels.com/photos/30809480/pexels-photo-30809480.jpeg",
+        "alt": "Indian Bridal Glam"
+      },
+      "gallery_2": {
+        "url": "https://images.unsplash.com/photo-1562322140-8baeececf3df",
+        "alt": "Hair styling and blow dry"
+      },
+      "gallery_3": {
+        "url": "https://images.unsplash.com/photo-1626383137804-ff908d2753a2",
+        "alt": "Modern beauty salon interior"
+      },
+      "gallery_4": {
+        "url": "https://images.pexels.com/photos/696285/pexels-photo-696285.jpeg",
+        "alt": "Woman receiving hair styling services"
+      }
+    }
+  },
+  "icons_library": "lucide-react",
+  "data_testid_rules": "All interactive elements (buttons, links, forms) MUST have a kebab-case, role-based data-testid attribute.",
+  "animation_guidelines": "Smooth hover states for buttons (colors, transform). Slight image scaling on hover in the gallery. Fade-in for sections as they scroll into view."
+}
