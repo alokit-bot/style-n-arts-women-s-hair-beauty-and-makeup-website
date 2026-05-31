@@ -1,54 +1,46 @@
 import { useEffect } from "react";
 import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-import { HOME } from "@/constants/testIds";
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { TrustStrip } from "@/components/TrustStrip";
+import { Services } from "@/components/Services";
+import { BridalHighlight } from "@/components/BridalHighlight";
+import { Experience } from "@/components/Experience";
+import { Gallery } from "@/components/Gallery";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
+function App() {
   useEffect(() => {
-    helloWorldApi();
+    const els = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("in");
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
   }, []);
 
   return (
-    <div>
-      <header className="App-header">
-        <a
-          data-testid={HOME.emergentLink}
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
-
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+    <div className="App font-body bg-[#FAF9F6] text-[#222] min-h-screen" data-testid="app-root">
+      <Header />
+      <main>
+        <Hero />
+        <TrustStrip />
+        <Services />
+        <BridalHighlight />
+        <Experience />
+        <Gallery />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
